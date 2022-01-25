@@ -54,12 +54,12 @@ void solve(){
         ar[a].pb(b);
         ar[b].pb(a);
     }
-    dfs1(1,-1);
-    res[1] = subDist[1];
-    for(auto child: ar[1]){
-        dfs(child,1);
+    dfs1(0,-1);
+    res[0] = subDist[0];
+    for(auto child: ar[0]){
+        dfs(child,0);
     }
-    loop(i,1,n+1){
+    loop(i,0,n){
         cout<<res[i]<<" ";
     }
 }

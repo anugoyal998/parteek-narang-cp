@@ -46,14 +46,14 @@ int count_bit(int n){
     }
     return ans;
 }
-
-
      
 int main(){
     int n;
     cin >> n;
     int i;
     cin >> i;
-    cout<<get_bit(n,i)<<endl;
+    cout<<n<<endl;
+    clearLastIBits(n,i);
+    cout<<n<<endl;
      return 0;
 }
